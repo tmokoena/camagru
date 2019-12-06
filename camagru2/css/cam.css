@@ -1,0 +1,229 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    font-family: cursive;
+}
+
+.logo{
+    color: rgb(211, 211, 211);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+    transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width:calc(100vw)){
+    .nav-links{
+        width: 60%;
+    }
+    .prev{
+        width: 680px;
+        height: 400px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .prev{
+        width: 400px;
+        height: 400px;
+    }
+    .cam{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0%;
+        height: 92vh;
+        top: 8vh;
+        background-color:  #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0%;
+    }
+    .burger{
+        display: block;
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    background-color: #5d4954;
+    align-items: center;
+    min-height: 8vh;
+    font-family: cursive;
+    
+}
+
+/* ----------------------------------this is the cam.php filesettings-------------------------------- */
+.bdy{
+    background-color: blueviolet;
+    height: calc(100vh - 8vh - 100px);
+    /* display: flex; */
+    /* overflow: auto; */
+}
+/* .wrap{
+    padding: 2%;
+    float: left;
+    overflow: unset;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-right: 1px;
+} */
+.cam{
+    
+    width: 400px;
+    height: 470px;
+    padding: 40px;
+    background-color: rgb(224, 168, 224);
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin-left: 30px;
+}
+.vid{
+    border-radius: 10px;;
+    width: 100%;
+}
+
+.btn{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.b{
+    border-radius: 12px;
+    width: 49%;
+    height: 50px;
+}
+.stck{
+    margin-top: 5%;
+    width: 100%;
+    height: 90px;
+    background-color: violet;
+    border-radius: 12px;
+}
+/* -==================================================================================================== */
+.img{
+    width: 80px;
+    height: 80px;
+}
+
+.prev{
+    /* margin-top: 5%; */
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+    /* width: 680px; */
+    /* height: 380px; */
+    background-color: wheat;
+    overflow: auto;
+    margin-left: 30px;
+}
+
+.col{
+    float: left;
+    text-align: center;
+    background-color: rgb(109, 2, 109);
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.up{
+    width: 80%;
+}
+
+
+.cam form{
+    float: left;
+    width: 49%;
+}
+/* ///////////////////////////////////////////upload/////////////////////////// */
+
+.bs{
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
