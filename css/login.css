@@ -1,0 +1,59 @@
+.wrap{
+    width: 100%;
+    height: calc(100vh - 8vh - 100px);
+}
+/* index.php .login div */
+.login{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    background-color:#9e959a;
+    box-shadow: 10px 10px 10px 10px;
+}
+/* register.php login div */
+.rlogin{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    background-color:#9e959a;
+    box-shadow: 10px 10px 10px 10px;
+}
+/* reset.php login div */
+.relogin{
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    background-color:#9e959a;
+    box-shadow: 10px 10px 10px 10px;
+}
+.text{
+    height: 60px;
+    margin-top: 4%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+.frm{
+    padding: 5%;
+}
+
+.title{
+    margin-top: 4%;
+}
+
+.err{
+    text-align: center;
+}
+
+.link{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+#err{
+    color: red;
+}

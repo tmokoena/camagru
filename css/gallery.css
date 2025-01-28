@@ -1,0 +1,30 @@
+.ga{
+    margin: auto;
+    width: 60%;
+    height: calc(100vh - 8vh - 100px);
+    background-color: rgb(129, 134, 134);
+    overflow: auto;
+    /* padding: 20px; */
+    align-content: center;
+}
+
+.pht{
+    float: left;
+    margin-left: 20px;
+    /* margin-top: 10px; */
+}
+
+.btn img{
+    width: 350px;
+    height: 240px;
+}
+
+.pg{
+    display: flex;
+    background-color: coral;
+}
+
+.pnum{
+    width: 30%;
+    background-color: chocolate;
+}
